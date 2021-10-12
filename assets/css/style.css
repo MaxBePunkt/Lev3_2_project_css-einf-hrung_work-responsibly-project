@@ -57,6 +57,7 @@ header section article p {
 header section article ul {
     list-style:none;
     text-align: right;
+    margin: 5vh 0;
 }
 header section article ul li a img {
     width:2vw;
@@ -66,13 +67,27 @@ header section article p:last-of-type {
     font-size: 15px;
     margin:5vh 0;
 }
-
-
 /* 
 #######################
         MAIN
 #######################
 */
+main section article h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 10vh 0 2vh 0;
+}
+main section article p {
+    margin-bottom: 10vh;
+}
+main section article div {
+    text-align:center;
+    margin:0 auto;
+}
+main section article div img {
+    width:20vw;
+    margin:3vh;
+}
 /* 
 #######################
         FOOTER
