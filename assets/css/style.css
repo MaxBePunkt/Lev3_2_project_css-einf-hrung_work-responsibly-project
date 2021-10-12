@@ -19,13 +19,12 @@ farbe text:
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 body {
     background: #eee;
 }
 article {
-    width: 80%;
-    margin: 0 auto;
 }
 section {
     border-bottom: 1px solid #ccc;
@@ -35,6 +34,10 @@ section {
         HEADER
 #######################
 */
+header article {
+    width: 80%;
+    margin: 0 auto;
+}
 header section article nav a {
     display: inline-block;
     color: #659d89;
@@ -72,6 +75,13 @@ header section article p:last-of-type {
         MAIN
 #######################
 */
+main section {
+    padding-bottom: 10vh;
+}
+main section:first-of-type article {
+    width: 80%;
+    margin: 0 auto;
+}
 main section article h2 {
     font-size: 30px;
     font-weight: normal;
@@ -84,12 +94,62 @@ main section article div {
     text-align:center;
     margin:0 auto;
 }
-main section article div img {
-    width:20vw;
-    margin:3vh;
+main section article img {
+    width:25%;
+    margin:1%;
+}
+main section article img:hover {
+    box-shadow: 0px 0px 30px 0px black;}
+main section:nth-of-type(2) article {
+    width: 80%;
+    margin:0 auto;
+}
+main section:nth-of-type(2) article:nth-of-type(even) {
+    width: 80%;
+    margin:0 auto;
+    text-align: right;
+}
+main section:nth-of-type(2) h2 {
+    margin: 10vh 0 10vh 10vw;
+}
+main section:nth-of-type(2) article div {
+    width:50%;
+    display:inline-block;
+    text-align: center;
+    margin: 10vh;
+}
+main section:nth-of-type(2) article div img {
+    width: 100%;
+}
+main section:nth-of-type(2) article div p {
+    margin: 1vh 0;
+    font-size: 15px;
+    color: #666;
+}
+main section:nth-of-type(2) article div span {
+    margin: 1vh 0;
+    font-size: 18px;
+    color: #000;
 }
 /* 
 #######################
         FOOTER
 #######################
 */
+
+footer {
+    text-align: center;
+}
+footer article {
+    padding:2vh 0;
+}
+footer article p {
+    font-size: 25px;
+    margin: 10vh auto;
+    color: #666;
+
+}
+footer article span {
+    font-size: 15px;
+    color: #666;
+}
